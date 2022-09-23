@@ -1,10 +1,12 @@
 import React from "react";
 
-const Header = () =>{
+const Header = ({teamCount, selectTeam}) =>{
+    console.log(selectTeam)
     return (
-        <>
-            <h1 className="text-orange-700">Header</h1>
-        </>
+        <div>
+            <h1 className="text-orange-700">Team allocation</h1>
+            <h2>{selectTeam} has {teamCount} members.</h2>
+        </div>
     );
 }
 
