@@ -1,10 +1,11 @@
 import React from "react";
 
 const Footer = () =>{
+    var today = new Date();
     return (
-        <>
-            <h1>Footer</h1>
-        </>
+        <div className="flex flex-col items-center font-bold mt-[40px] mb-[20px]">
+            <h1>Team allocation app - {today.getFullYear()}</h1>
+        </div>
     );
 }
 

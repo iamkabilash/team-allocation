@@ -3,9 +3,9 @@ import React from "react";
 const Header = ({teamCount, selectTeam}) =>{
     console.log(selectTeam)
     return (
-        <div>
-            <h1 className="text-orange-700">Team allocation</h1>
-            <h2>{selectTeam} has {teamCount} members.</h2>
+        <div className="flex flex-col items-center mt-[20px]">
+            <h1 className="text-2xl font-bold">Team allocation</h1>
+            <h2 className="text-xl font-bold">{selectTeam} has {teamCount} members.</h2>
         </div>
     );
 }
