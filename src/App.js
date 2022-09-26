@@ -147,7 +147,10 @@ const App = () => {
           }>
           </Route>
           <Route path="/GroupedTeams" element={
-            <GroupedTeams employees = {employees} selectTeam = {selectTeam} />
+            <GroupedTeams employees = {employees} 
+              selectTeam = {selectTeam} 
+              setSelectTeam = {setSelectTeam} 
+            />
           }>
           </Route>
           <Route path="*" element={
